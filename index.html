@@ -3692,7 +3692,7 @@ function renderExam(){
       });
       var exWrap = card.querySelector(".q-explain");
       var cls = isRight ? "ex-ok" : "ex-bad";
-      var title = isRight ? "✅ נכון!" : (chosen < 0 ? "⚠️ לא נענתה. התשובה הנכונה: " + letters[q.answer] + "." : "❌ שגוי. התשובה הנכונה: " + letters[q.answer] + ".");
+      var title = isRight ? "✅ נכון!" : (chosen < 0 ? "⚠️ לא נענתה! התשובה הנכונה: " + letters[q.answer] + "." : "❌ שגוי. התשובה הנכונה: " + letters[q.answer] + ".");
       exWrap.innerHTML = "<div class='explain " + cls + "'><span class='ex-title'>" + title + "</span> <span class='ex-body'></span></div>";
       exWrap.querySelector(".ex-body").textContent = q.explain || "";
     });
